@@ -1,0 +1,95 @@
+/* ROOT COLOR VARIABLES */
+:root {
+  --bg-color: #0d1117;
+  --card-bg: #161b22;
+  --text-main: #f0f6fc;
+  --text-sub: #8b949e;
+  --accent-blue: #1f6feb;
+  --accent-green: #238636;
+  --border-color: #30363d;
+  --badge-bg: #da3633;
+}
+
+/* LIGHT THEME VARIABLES */
+.light-mode {
+  --bg-color: #f6f8fa;
+  --card-bg: #ffffff;
+  --text-main: #1f2328;
+  --text-sub: #656d76;
+  --border-color: #d0d7de;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+body { background-color: var(--bg-color); color: var(--text-main); padding-bottom: 70px; }
+
+/* NAVBAR */
+.navbar { display: flex; align-items: center; justify-content: space-between; padding: 12px 20px; background-color: var(--card-bg); border-bottom: 1px solid var(--border-color); sticky: top; top: 0; z-index: 100; }
+.logo { display: flex; align-items: center; gap: 8px; font-weight: bold; font-size: 20px; color: var(--accent-blue); }
+.search-box { display: flex; align-items: center; background-color: var(--bg-color); border: 1px solid var(--border-color); border-radius: 20px; padding: 6px 14px; width: 40%; }
+.search-box input { background: none; border: none; outline: none; color: var(--text-main); width: 100%; margin-left: 8px; }
+.header-actions { display: flex; gap: 10px; }
+.icon-btn { background: var(--bg-color); border: 1px solid var(--border-color); color: var(--text-main); padding: 8px 12px; border-radius: 50%; cursor: pointer; position: relative; }
+.icon-btn .badge { position: absolute; top: -4px; right: -4px; background: var(--accent-blue); color: white; font-size: 10px; padding: 2px 5px; border-radius: 10px; }
+
+/* CATEGORIES */
+.categories { display: flex; gap: 10px; padding: 12px 20px; overflow-x: auto; background-color: var(--card-bg); border-bottom: 1px solid var(--border-color); }
+.chip { background: var(--bg-color); border: 1px solid var(--border-color); color: var(--text-main); padding: 6px 14px; border-radius: 15px; white-space: nowrap; cursor: pointer; }
+.chip.active { background: var(--accent-blue); color: white; border-color: var(--accent-blue); }
+
+/* CONTAINER & SECTIONS */
+.container { max-width: 1200px; margin: 20px auto; padding: 0 15px; }
+.tab-content { display: none; }
+.tab-content.active { display: block; }
+.section-header { display: flex; justify-content: space-between; align-items: center; margin: 20px 0 12px 0; }
+.section-header h2 { font-size: 18px; display: flex; align-items: center; gap: 8px; }
+.section-header h2 span { font-size: 12px; color: var(--text-sub); font-weight: normal; }
+.view-all { color: var(--accent-blue); text-decoration: none; font-size: 14px; font-weight: bold; }
+
+/* SHORTS CAROUSEL */
+.shorts-carousel { display: flex; gap: 15px; overflow-x: auto; padding-bottom: 10px; }
+.short-card { min-width: 140px; height: 220px; border-radius: 12px; overflow: hidden; position: relative; border: 1px solid var(--border-color); flex-shrink: 0; }
+.short-card img { width: 100%; height: 100%; object-fit: cover; }
+.short-info { position: absolute; bottom: 0; background: linear-gradient(transparent, rgba(0,0,0,0.8)); width: 100%; padding: 10px; }
+.short-info p { font-size: 12px; font-weight: bold; color: white; }
+.views { font-size: 10px; color: #ff4757; font-weight: bold; }
+
+/* PRODUCTS GRID */
+.products-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 15px; }
+.product-card { background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; transition: 0.2s; }
+.product-card:hover { transform: translateY(-3px); }
+.card-image { position: relative; height: 180px; width: 100%; }
+.card-image img { width: 100%; height: 100%; object-fit: cover; }
+.discount-badge { position: absolute; top: 8px; left: 8px; background: var(--badge-bg); color: white; padding: 2px 6px; font-size: 11px; font-weight: bold; border-radius: 4px; }
+.card-actions { position: absolute; top: 8px; right: 8px; display: flex; flex-direction: column; gap: 5px; }
+.action-btn { background: rgba(0,0,0,0.5); border: none; color: white; padding: 6px; border-radius: 50%; cursor: pointer; }
+
+.card-details { padding: 12px; }
+.rating { font-size: 12px; color: #ffa500; font-weight: bold; }
+.rating span { color: var(--text-sub); }
+.card-details h3 { font-size: 15px; margin: 4px 0 2px 0; }
+.sub { font-size: 12px; color: var(--text-sub); margin-bottom: 8px; }
+.price-box { display: flex; gap: 8px; align-items: center; margin-bottom: 10px; }
+.price { font-size: 16px; font-weight: bold; color: var(--accent-blue); }
+.old-price { font-size: 12px; text-decoration: line-through; color: var(--text-sub); }
+
+.order-btn { display: block; text-align: center; background: var(--accent-green); color: white; text-decoration: none; padding: 8px; border-radius: 6px; font-weight: bold; font-size: 13px; }
+
+/* FULL MOBILE SHORTS VIEW */
+.full-short-container { position: relative; height: 75vh; border-radius: 16px; overflow: hidden; max-width: 400px; margin: 0 auto; }
+.full-short-bg { width: 100%; height: 100%; object-fit: cover; }
+.short-overlay { position: absolute; inset: 0; background: linear-gradient(transparent 50%, rgba(0,0,0,0.9)); display: flex; flex-direction: column; justify-content: space-between; padding: 15px; }
+.short-right-actions { align-self: flex-end; display: flex; flex-direction: column; gap: 15px; color: white; text-align: center; font-size: 12px; }
+.side-icon i { font-size: 22px; display: block; margin-bottom: 2px; }
+.short-bottom-info { color: white; }
+
+/* MOBILE BOTTOM NAV */
+.mobile-nav { position: fixed; bottom: 0; left: 0; right: 0; background: var(--card-bg); border-top: 1px solid var(--border-color); display: flex; justify-content: space-around; padding: 8px 0; z-index: 200; }
+.nav-btn { background: none; border: none; color: var(--text-sub); display: flex; flex-direction: column; align-items: center; font-size: 11px; cursor: pointer; }
+.nav-btn i { font-size: 18px; margin-bottom: 2px; }
+.nav-btn.active { color: var(--accent-blue); }
+
+@media (min-width: 768px) {
+  .mobile-nav { display: none; }
+  body { padding-bottom: 0; }
+  }
+                 
