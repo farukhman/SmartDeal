@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartDeal - Best Deals Everyday</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dark-mode">
+
+  <!-- TOP HEADER -->
+  <header class="navbar">
+    <div class="logo">
+      <i class="fa-solid fa-bag-shopping logo-icon"></i>
+      <span>SmartDeal</span>
+    </div>
+    
+    <div class="search-box">
+      <i class="fa-solid fa-magnifying-glass search-icon"></i>
+      <input type="text" placeholder="Search products, deals...">
+    </div>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="theme-toggle"><i class="fa-solid fa-moon"></i></button>
+      <button class="icon-btn"><i class="fa-solid fa-cart-shopping"></i><span class="badge">3</span></button>
+      <button class="icon-btn"><i class="fa-solid fa-bell"></i><span class="badge">5</span></button>
+    </div>
+  </header>
+
+  <!-- CATEGORIES BAR -->
+  <nav class="categories">
+    <button class="chip active">All</button>
+    <button class="chip"><i class="fa-solid fa-tv"></i> Electronics</button>
+    <button class="chip"><i class="fa-solid fa-fire"></i> Low-Price Viral Deals</button>
+    <button class="chip"><i class="fa-solid fa-shirt"></i> Fashion</button>
+    <button class="chip"><i class="fa-solid fa-wrench"></i> Mini Tools</button>
+  </nav>
+
+  <!-- MAIN CONTENT CONTAINER -->
+  <main class="container">
+
+    <!-- HOME TAB CONTENT -->
+    <section id="home-tab" class="tab-content active">
+      
+      <!-- SHORTS SECTION -->
+      <div class="section-header">
+        <h2><i class="fa-solid fa-circle-play shorts-icon"></i> Shorts <span>Quick deals · Trending products</span></h2>
+        <a href="#" class="view-all">View All &rarr;</a>
+      </div>
+
+      <div class="shorts-carousel">
+        <div class="short-card">
+          <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=300" alt="Earbuds">
+          <div class="short-info">
+            <span class="views"><i class="fa-solid fa-play"></i> 124K</span>
+            <p>Wireless Earbuds</p>
+          </div>
+        </div>
+        <div class="short-card">
+          <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=300" alt="Watch">
+          <div class="short-info">
+            <span class="views"><i class="fa-solid fa-play"></i> 98K</span>
+            <p>Smart Watch Pro</p>
+          </div>
+        </div>
+        <div class="short-card">
+          <img src="https://images.unsplash.com/photo-1585338107529-13afc5f02586?w=300" alt="Cooler">
+          <div class="short-info">
+            <span class="views"><i class="fa-solid fa-play"></i> 76K</span>
+            <p>Mini Air Cooler</p>
+          </div>
+        </div>
+        <div class="short-card">
+          <img src="https://images.unsplash.com/photo-1507499739999-097706ad8914?w=300" alt="Light">
+          <div class="short-info">
+            <span class="views"><i class="fa-solid fa-play"></i> 42K</span>
+            <p>LED Night Light</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- DEALS SECTION -->
+      <div class="section-header">
+        <h2><i class="fa-solid fa-fire deals-icon"></i> Low-Price Deals <span>Best deals. Lowest prices. Max savings!</span></h2>
+        <a href="#" class="view-all">View All &rarr;</a>
+      </div>
+
+      <div class="products-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+          <div class="card-image">
+            <span class="discount-badge">-50%</span>
+            <div class="card-actions">
+              <button class="action-btn"><i class="fa-regular fa-heart"></i></button>
+              <button class="action-btn"><i class="fa-regular fa-bookmark"></i></button>
+            </div>
+            <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=400" alt="Earbuds">
+          </div>
+          <div class="card-details">
+            <div class="rating"><i class="fa-solid fa-star"></i> 4.8 <span>(12.4k)</span></div>
+            <h3>TWS Wireless Earbuds</h3>
+            <p class="sub">HiFi Sound | Noise Cancelling</p>
+            <div class="price-box">
+              <span class="price">$19.99</span>
+              <span class="old-price">$39.99</span>
+            </div>
+            <a href="YOUR_AFFILIATE_LINK" target="_blank" class="order-btn"><i class="fa-solid fa-cart-shopping"></i> Order Now</a>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+          <div class="card-image">
+            <span class="discount-badge">-40%</span>
+            <div class="card-actions">
+              <button class="action-btn"><i class="fa-regular fa-heart"></i></button>
+              <button class="action-btn"><i class="fa-regular fa-bookmark"></i></button>
+            </div>
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400" alt="Watch">
+          </div>
+          <div class="card-details">
+            <div class="rating"><i class="fa-solid fa-star"></i> 4.7 <span>(8.9k)</span></div>
+            <h3>Smart Watch Pro</h3>
+            <p class="sub">Health | Fitness | Bluetooth</p>
+            <div class="price-box">
+              <span class="price">$29.99</span>
+              <span class="old-price">$49.99</span>
+            </div>
+            <a href="YOUR_AFFILIATE_LINK" target="_blank" class="order-btn"><i class="fa-solid fa-cart-shopping"></i> Order Now</a>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+          <div class="card-image">
+            <span class="discount-badge">-60%</span>
+            <div class="card-actions">
+              <button class="action-btn"><i class="fa-regular fa-heart"></i></button>
+              <button class="action-btn"><i class="fa-regular fa-bookmark"></i></button>
+            </div>
+            <img src="https://images.unsplash.com/photo-1585338107529-13afc5f02586?w=400" alt="Air Cooler">
+          </div>
+          <div class="card-details">
+            <div class="rating"><i class="fa-solid fa-star"></i> 4.6 <span>(6.2k)</span></div>
+            <h3>Mini Air Cooler</h3>
+            <p class="sub">Cool & Fresh | USB Powered</p>
+            <div class="price-box">
+              <span class="price">$15.99</span>
+              <span class="old-price">$39.99</span>
+            </div>
+            <a href="YOUR_AFFILIATE_LINK" target="_blank" class="order-btn"><i class="fa-solid fa-cart-shopping"></i> Order Now</a>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+          <div class="card-image">
+            <span class="discount-badge">-45%</span>
+            <div class="card-actions">
+              <button class="action-btn"><i class="fa-regular fa-heart"></i></button>
+              <button class="action-btn"><i class="fa-regular fa-bookmark"></i></button>
+            </div>
+            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400" alt="Ring Light">
+          </div>
+          <div class="card-details">
+            <div class="rating"><i class="fa-solid fa-star"></i> 4.7 <span>(4.5k)</span></div>
+            <h3>LED Ring Light</h3>
+            <p class="sub">3 Modes | Adjustable Stand</p>
+            <div class="price-box">
+              <span class="price">$12.99</span>
+              <span class="old-price">$23.99</span>
+            </div>
+            <a href="YOUR_AFFILIATE_LINK" target="_blank" class="order-btn"><i class="fa-solid fa-cart-shopping"></i> Order Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FULL SCREEN SHORTS TAB (MOBILE VIEW) -->
+    <section id="shorts-tab" class="tab-content">
+      <div class="full-short-container">
+        <img src="https://images.unsplash.com/photo-1585338107529-13afc5f02586?w=600" class="full-short-bg" alt="Short Video">
+        <div class="short-overlay">
+          <div class="short-right-actions">
+            <div class="side-icon"><i class="fa-solid fa-heart"></i><span>24.8K</span></div>
+            <div class="side-icon"><i class="fa-solid fa-comment"></i><span>1.2K</span></div>
+            <div class="side-icon"><i class="fa-solid fa-share"></i><span>Share</span></div>
+          </div>
+          <div class="short-bottom-info">
+            <h3>Mini Air Cooler</h3>
+            <p>Cooler & Fresh Anywhere</p>
+            <div class="short-price">$15.99 <del>$39.99</del></div>
+            <a href="YOUR_AFFILIATE_LINK" target="_blank" class="order-btn green-btn"><i class="fa-solid fa-cart-shopping"></i> Order Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SAVED TAB -->
+    <section id="saved-tab" class="tab-content">
+      <h2 class="page-title">Saved Items</h2>
+      <p>Aap ke bookmark kiye hue items yahan dikhenge.</p>
+    </section>
+
+    <!-- SETTINGS TAB -->
+    <section id="settings-tab" class="tab-content">
+      <h2 class="page-title">Settings</h2>
+      <div class="setting-item">
+        <span>Dark Mode</span>
+        <button id="mode-toggle-btn" class="toggle-switch">Switch Theme</button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MOBILE BOTTOM NAVIGATION -->
+  <nav class="mobile-nav">
+    <button class="nav-btn active" data-tab="home-tab">
+      <i class="fa-solid fa-house"></i>
+      <span>Home</span>
+    </button>
+    <button class="nav-btn" data-tab="shorts-tab">
+      <i class="fa-solid fa-circle-play"></i>
+      <span>Shorts</span>
+    </button>
+    <button class="nav-btn" data-tab="saved-tab">
+      <i class="fa-solid fa-bookmark"></i>
+      <span>Saved</span>
+    </button>
+    <button class="nav-btn" data-tab="settings-tab">
+      <i class="fa-solid fa-gear"></i>
+      <span>Settings</span>
+    </button>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+  </html>
+  
